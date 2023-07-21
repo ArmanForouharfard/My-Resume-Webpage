@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Css page.css">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+            @media only screen and (min-width: 600px) {
+                /* For tablets: */
+                .col-s-1 {width: 8.33%;}
+                .col-s-2 {width: 16.66%;}
+                .col-s-3 {width: 25%;}
+                .col-s-4 {width: 33.33%;}
+                .col-s-5 {width: 41.66%;}
+                .col-s-6 {width: 50%;}
+                .col-s-7 {width: 58.33%;}
+                .col-s-8 {width: 66.66%;}
+                .col-s-9 {width: 75%;}
+                .col-s-10 {width: 83.33%;}
+                .col-s-11 {width: 91.66%;}
+                .col-s-12 {width: 100%;}
+            }
+            @media only screen and (min-width: 768px) {
+                /* For desktop: */
+                .col-1 {width: 8.33%;}
+                .col-2 {width: 16.66%;}
+                .col-3 {width: 25%;}
+                .col-4 {width: 33.33%;}
+                .col-5 {width: 41.66%;}
+                .col-6 {width: 50%;}
+                .col-7 {width: 58.33%;}
+                .col-8 {width: 66.66%;}
+                .col-9 {width: 75%;}
+                .col-10 {width: 83.33%;}
+                .col-11 {width: 91.66%;}
+                .col-12 {width: 100%;}
+            }
+        </style>
+    </head>
+    <body class="bg6">
+        <div class="col-12 col-s-12 menu">
+          <div class="navbar" id="mynavbar">
+            <a href="Page-1 (main page).html">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">Products and Projects 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="Page-2.1 (the Product's page).html">Products</a>
+                <a href="Page-2.2 (the Global Project's page).html">Global Projects</a>
+              </div>
+            </div>
+            <a href="Page-3 (the technical university's page).html">Forouhar Industrie's University </a>
+            <a href="Page-4 (About us & our History's page).html">About Us</a>
+            <a href="Page-5 (Members of the Company's page).html">Members of company</a>
+            <a href="Page-6 (Contact us's page).html">Contact us</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+              <form>
+                <input type="text" name="search" placeholder="Search..">
+              </form>
+          </div>
+        </div>
+            <div style="background-color:#830094;
+                color: white; padding: 30px;" id="Head">
+                <h1 style="text-align: center;">
+                    <em>
+                        Contact us
+                    </em>
+                </h1>
+            </div>
+            <div id="style1">
+                <h2>
+                    <em>
+                        If you have any questions or any problems that you descovered from our products and we did not realized it
+                        you can call or send us E-mail;<br/>
+                        OR you can send us Comments in here in this Website.
+                    </em>
+                </h2>
+                <h3 style="text-align: left;">
+                    <em>
+                    E-mail: Forouhar-Industries@gmail.com
+                    </em>
+                </h3>
+                <h3 style="text-align: left;">
+                <em>
+                    Phone-Numbers of the Company:
+                    333-145-7351-9
+                </em>
+                </h3>
+            </div>
+            <div id="style1" style="text-align: left;">
+                <h2>
+                    <em>
+                        you can also send us comments from inside the site itself,
+                        just chack your idenification and then write your comments then send so we answer to your questions as soon as possible.<br/>
+                        Thank you 
+                    </em>
+                </h2>
+            </div>
+            <div id="style2" style="width: 90%; margin-left: 5%; padding-right: 3%; text-align: center;">
+                    <form action="http://www.mydomain.com" method="GET">
+                        <em>
+                        First-Name:
+                        </em>
+                            <input type="text" name="Firstname" />
+                        <br/>
+                        <em>
+                        Last-Name:
+                        </em>
+                        <input type="text" name="Lastname" />
+                        <br/>
+                        <em>
+                        E-mail:
+                        </em>
+                        <input type="email" name="email" />
+                        <br/>
+                        <em>
+                        Phone Number:
+                        </em>  
+                        <input type="tel" name="Telephone" />
+                        <br/>
+                        <em>
+                        I am :<br/>
+                            <input type="radio" name="Radio1" value="Male" />Male
+                            <input type="radio" name="Radio2" value="Female" />Female
+                        </em>  
+                            <br/>
+                        <em>
+                        Please choose your Country:<br/>
+                        </em>  
+                        <select name="Country">
+                            <option value="IR">Iran</option>
+                            <option value="Ar">Saudi Arabia</option>
+                            <option value="EN">England</option>
+                            <option value="FR">France</option>
+                            <option value="GER">Germany</option>
+                            <option value="RU">Russia</option>
+                            <option value="AUS">Austria</option>
+                            <option value="Aus">Australia</option>
+                            <option value="USA">United states</option>
+                            <option value="SOU">South America</option>
+                            <option value="IN">Indiea</option>
+                            <option value="CH">China</option>
+                            <option value="JA">Japen</option>
+                        </select>
+                        <br/>
+                        <em>
+                        Please choose your File:
+                        </em>
+                            <input type="file" name="File" />
+                        <br/>
+                        <textarea rows="10" name="textarea" cols="40" rows="10"></textarea>
+                        <br/>
+                        <button class="btn-blue" style="margin-top: 10px;" type="reset">Reset</button>
+                        <button class="btn-blue" style="margin-top: 10px;" type="submit">Submit</button>
+                    </form>
+            </div>  
+            <div style="margin: 20px; clear: both;">
+                    
+            </div>
+            <div id="footer">
+                <p>CopyRight my Website.com/2021</p>
+                  <div>
+                      <a style="text-decoration: none; padding-right: 15px;" href="Page-6 (Contact us's page).html"> 
+                          <img style="width: 40px;" src="Images/icons of the footer/orange-email-icon-png.png">
+                      </a>
+                      <a style="text-decoration: none; padding-right: 15px;" href="Page-6 (Contact us's page).html">
+                          <img style="width: 40px;" src="Images/icons of the footer/orange phone call.png">
+                      </a>
+                  </div>
+            </div>
+            <!--the navbar last child collaps-->
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("mynavbar");
+                    if (x.className === "navbar") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "navbar";
+                        }
+                    }
+            </script>
+    </body>
+</html>
