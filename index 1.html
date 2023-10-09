@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="asset/index.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+        <link rel="stylesheet" href="asset/index.css">
     </head>
     <body class="bg1">
         <div id="main">
             <div class="col-12 col-s-12 menu">
                 <div class="navbar" id="mynavbar">
-                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open Menu</span>       
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                      &#9776;
+                      <em>
+                        Open Menu
+                      </em>
+                    </span>       
                     <div id="mySidenav" class="sidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <h3 style="text-align: center;">
@@ -28,7 +34,7 @@
                             <a class="fa fa-user" href="#About "> About Me</a>
                         </em>
                         <em>
-                            <a class="fa fa-book" href="#Services"> Web Designing Examples</a>
+                            <a class="fa fa-book" href="#Services"> Web Designs and programming Examples</a>
                         </em>
                         <em>
                             <a class="fa fa-envelope" href="#Contact"> Contact</a>
@@ -127,7 +133,7 @@
                     </h2>
                     <p>
                       <em>
-                        Senior student in Software development with a passion for backend development and learning new technologies. Highly motivated, detail-oriented,
+                        Junior student in Software development with a passion for backend development and learning new technologies. Highly motivated, detail-oriented,
                          and skilled at solving programming problems.
                           Teamwork interested, with the capability to work also independently.
                             Currently searching for an internship to develop work skills and learn new experiences.
@@ -142,15 +148,16 @@
                                     The programming languages (Front-End)
                                 </em>
                             </p>
-                            <canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
+                            <canvas id="myChart1" style="width:100%; max-width:600px; display:initial;"></canvas>
                             <!-- "#e8c3b9" 5 ,"#1e7145" 5 colors (incase if you need more)-->
                             <script>
                               var xValues = ["Html", "Css", "Java Script"];
                               var yValues = [60, 60, 30];
                               var barColors = [
-                                "#b91d47",
-                                "#00aba9",
+                                "#fd0000",
                                 "#2b5797",
+                                "#fffb00",
+                                //#00aba9
                               ];
                         
                               new Chart("myChart1", {
@@ -171,6 +178,7 @@
                             </script>
                           </div>
                         </div>
+
                         <div class="column">
                           <div id="style1">
                             <p>
@@ -178,18 +186,19 @@
                                     The programming languages (Back-End)
                                 </em>
                             </p>
-                            <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+                            <canvas id="myChart2" style="width:100%; max-width:600px; display:initial;"></canvas>
                             <script>
                                 var xValues = ["Php", "SQL", "Java", "python", "C", "C#", "C++"];
                                 var yValues = [10, 30, 10, 50, 10, 15, 20];
                                 var barColors = [
-                                  "#fd0000",
-                                  "#00ff88",
+                                  "#8400ff",
                                   "#0065fc",
-                                  "#fc0043",
-                                  "#fffb00",
-                                  "#b91d47",
-                                  "#1e7145",
+                                  "#fd0000",
+                                  "#fffd6a",
+                                  "#d1d1d1",
+                                  "#72359b",
+                                  "#0075fc",
+                                  //00ff88
                                 ];
                           
                                 new Chart("myChart2", {
@@ -210,6 +219,85 @@
                               </script>
                           </div>
                         </div>
+
+                        <div class="column">
+                          <div id="style1">
+                            <p>
+                                <em>
+                                    The frameworks
+                                </em>
+                            </p>
+                            <canvas id="myChart3" style="width:100%; max-width:600px; display:initial;"></canvas>
+                            <script>
+                                var xValues = ["wordpress","Github","Git","Bootstrap",];
+                                var yValues = [15,10,10,15];
+                                var barColors = [
+                                  "#00aba9",
+                                  "#252525",
+                                  "#fd0000",
+                                  "#9445c9",
+                                  //"#fffb00",
+                                  //"#b91d47",
+                                  //"#1e7145",
+                                ];
+                          
+                                new Chart("myChart3", {
+                                  type: "pie",
+                                  data: {
+                                    labels: xValues,
+                                    datasets: [{
+                                      backgroundColor: barColors,
+                                      data: yValues
+                                    }]
+                                  },
+                                  options: {
+                                    title: {
+                                      display: true,
+                                    }
+                                  }
+                                });
+                              </script>
+                          </div>
+                        </div>
+
+                        <div class="column">
+                          <div id="style1">
+                            <p>
+                                <em>
+                                    Microsoft Applications
+                                </em>
+                            </p>
+                            <canvas id="myChart4" style="width:100%; max-width:600px; display:initial;"></canvas>
+                            <!-- "#e8c3b9" 5 ,"#1e7145" 5 colors (incase if you need more)-->
+                            <script>
+                              var xValues = ["Word", "Powerpoint", "Excel", "Access"];
+                              var yValues = [50, 40, 30, 10];
+                              var barColors = [
+                                "#2b5797",
+                                "#fd0000",
+                                "#02cf69",
+                                "#c50847",
+                              ];
+                        
+                              new Chart("myChart4", {
+                                type: "doughnut",
+                                data: {
+                                  labels: xValues,
+                                  datasets: [{
+                                    backgroundColor: barColors,
+                                    data: yValues
+                                  }]
+                                },
+                                options: {
+                                  title: {
+                                    display: true,
+                                  }
+                                }
+                              });
+                            </script>
+                          </div>
+                        </div>
+
                     </div>
                   </div>
               </div>
@@ -217,7 +305,7 @@
 
             <div id="Services">
               <div id="style1">  
-                <div id="myBtnContainer">
+                <div id="myBtnContainer" style="color: #02cf69;">
                 <!--Front end languages-->
                   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
                   <button class="btn" onclick="filterSelection('HTML & CSS & javascript')"> HTML & CSS & javascript</button>
@@ -237,10 +325,8 @@
                         <div class="content2">
                             <a href="asset/Other projects/Forouhar Industries Website/Page-1 (main page).html">
                                 <img src="asset/images/Thumbnail Images of websites/Forouhar industries (thumbnail images).png" alt="Full Website 1" style="width:100%">
-                                <h4>Forouhar Industries</h4>
-                                <p>HTML & CSS & javascript (not added on internet yet!)<br/>
-                                as an example of my own.
-                                </p>
+                                <h4>Project 2: Forouhar Industries</h4>
+                                <p>HTML & CSS & javascript (not added on internet yet!)</p>
                             </a>
                         </div>
                     </div>
@@ -248,7 +334,7 @@
                         <div class="content2">
                             <a href="asset/Other projects/My linktree page/Link tree index.html">
                                 <img src="asset/images/Thumbnail Images of websites/linktree webpage.png" alt="Full Website 2" style="width:100%">
-                                <h4>My linktree page</h4>
+                                <h4>Project 2: My linktree page</h4>
                                 <p>HTML & CSS (Only (No javascript))</p>
                             </a>
                         </div>
@@ -257,8 +343,8 @@
                         <div class="content2">
                             <a href="asset/Other projects/Voice-Desktop-Assisstant-Ai/Jarvis.3 (test).py">
                                 <img src="asset/images/Thumbnail Images of websites/Personal-Assistant-AI.jpg" alt="Full Website 3" style="width:100%">
-                                <h4>JARVIS</h4>
-                                <p>A voice desktop assistant Ai made with Python ((Codes Only) not in html and css page form yet!)</p>
+                                <h4> Project 3: JARVIS</h4>
+                                <p>A voice desktop assistant Ai ((Codes Only) not in html and css page form yet!)</p>
                             </a>
                         </div>
                     </div>
@@ -289,101 +375,14 @@
                 </div>
             </div>
         </div>
-
-        <!--navbar menu-->
-        <script>
-            function openNav() {
-              document.getElementById("mySidenav").style.width = "250px";
-              document.getElementById("main").style.marginLeft = "250px";
-            }
-
-            function closeNav() {
-              document.getElementById("mySidenav").style.width = "0";
-              document.getElementById("main").style.marginLeft= "0";
-            }
-        </script>
         
-        <!--slideshow-->
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            
-            function showSlides(n) {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
-                }
-                for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-                }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-            }
-        </script>
-
-        <!--column2's category buttons-->
-        <script>
-          filterSelection("all")
-          function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("column2");
-            if (c == "all") c = "";
-              for (i = 0; i < x.length; i++) {
-                  w3RemoveClass(x[i], "show");
-                  if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-              }
-          }
-      
-          function w3AddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-            }
-          }
-      
-          function w3RemoveClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                arr1.splice(arr1.indexOf(arr2[i]), 1);     
-                }
-            }
-          element.className = arr1.join(" ");
-          }
-      
-          // Add active class to the current button (highlight it)
-          var btnContainer = document.getElementById("myBtnContainer");
-          var btns = btnContainer.getElementsByClassName("btn");
-          for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function(){
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
-          }
-        </script>
+        <script type="text/javascript" src="asset/index.js"></script>
     </body>
     <!-- Issue's List
       1) the webpage is responsive but in Mobile phone size things gets too small or out of their fields, must work on the code
       i'm pretty sure there is a code for that i just have to search it...
       
-      2) on project's list some of the langauge buttons stay active (gray color) it's probably an error of my button codes
+      2) on project's list some of the langauge buttons stays active (gray color) it's probably an error of my button codes
 
       3) no other errors for now!!!
     -->
