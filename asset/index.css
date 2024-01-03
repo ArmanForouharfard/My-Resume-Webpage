@@ -2,6 +2,10 @@
   box-sizing: border-box
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /*font-family: "Lato", sans-serif, Arial;*/
   color: black;
@@ -9,11 +13,6 @@ body {
   font-style: inherit;
   margin: auto;
 }
-
-html {
-scroll-behavior: smooth;
-}
-
 
 .navbar {
   overflow: hidden;
@@ -29,6 +28,7 @@ scroll-behavior: smooth;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-style: italic;
   transition: 1s;
 }
 
@@ -196,8 +196,7 @@ transition: all 300ms ease-in-out;
   border: 10px rgb(31, 30, 30) inset;
   color: rgb(12, 12, 12);
   direction: ltr;
-
-  flex: 1 0 120px;
+  flex: 1 1 120px;
 }
 
 #style2{
@@ -253,9 +252,12 @@ clear: both;
 flex: 1 0 120px;
 }
 
+
 p{
-margin: 0%;
+/*margin: 0%;*/
+word-wrap: break-word;
 }
+
 
 /*thumbnail images*/
 .thumbnail img {
@@ -314,6 +316,15 @@ h1 {
   /*flex: 1 0 120px;*/
 }
 
+/* Responsive layout - makes the style1 stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .style1 {
+    width: 100%;
+    padding-bottom: 50%;
+
+  }
+}
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
@@ -360,17 +371,117 @@ h1 {
   background-color: #666;
   color: white;
 }
+
 a{
   text-decoration: none;
   color: #000000;
 }
+
+/*
 h4{
 margin: 3%;
 }
+*/
 
 /*the footer*/
 #footer{
-background-color:rgb(22, 22, 24);
-    padding: 20px;
-    color: white;
+  background-color:rgb(22, 22, 24);
+  padding: 20px;
+  color: white;
+}
+
+
+/*the scroll to top button*/
+.progress-wrap {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50px;
+  background-color: #1b1b1b;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.progress-wrap.active-progress {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.progress-wrap::after {
+  position: absolute;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f062';
+  text-align: center;
+  line-height: 46px;
+  font-size: 18px;
+  color: rgb(47, 218, 218); 
+  /* #1f2029; */
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.lightScrollIcon::after {
+  color: #ecedf3 !important;
+}
+
+.progress-wrap:hover::after {
+  opacity: 0;
+}
+
+.progress-wrap::before {
+  position: absolute;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f062';
+  text-align: center;
+  line-height: 46px;
+  font-size: 18px;
+  opacity: 0;
+  background-image: linear-gradient(298deg, #da2c4d, #f8ab37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 2;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.progress-wrap:hover::before {
+  opacity: 1;
+}
+
+.progress-wrap svg path {
+  fill: none;
+}
+
+.progress-wrap svg.progress-circle path {
+  stroke: white;
+  /*#1f2029;*/
+  stroke-width: 4;
+  box-sizing: border-box;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
