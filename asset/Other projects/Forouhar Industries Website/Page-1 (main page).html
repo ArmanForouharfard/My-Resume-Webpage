@@ -2,58 +2,91 @@
 <html>
     <head>
         <link rel="stylesheet" href="Css page.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+            @media only screen and (min-width: 600px) {
+                /* For tablets: */
+                .col-s-1 {width: 8.33%;}
+                .col-s-2 {width: 16.66%;}
+                .col-s-3 {width: 25%;}
+                .col-s-4 {width: 33.33%;}
+                .col-s-5 {width: 41.66%;}
+                .col-s-6 {width: 50%;}
+                .col-s-7 {width: 58.33%;}
+                .col-s-8 {width: 66.66%;}
+                .col-s-9 {width: 75%;}
+                .col-s-10 {width: 83.33%;}
+                .col-s-11 {width: 91.66%;}
+                .col-s-12 {width: 100%;}
+            }
+            @media only screen and (min-width: 768px) {
+                /* For desktop: */
+                .col-1 {width: 8.33%;}
+                .col-2 {width: 16.66%;}
+                .col-3 {width: 25%;}
+                .col-4 {width: 33.33%;}
+                .col-5 {width: 41.66%;}
+                .col-6 {width: 50%;}
+                .col-7 {width: 58.33%;}
+                .col-8 {width: 66.66%;}
+                .col-9 {width: 75%;}
+                .col-10 {width: 83.33%;}
+                .col-11 {width: 91.66%;}
+                .col-12 {width: 100%;}
+            }
+        </style>
     </head>
     <body class="bg1">
-        <div class="col-12 col-s-12 menu">
-          <div class="navbar" id="mynavbar">
-                <a href="Page-1 (main page).html">Home</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Products and Projects 
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="Page-2.1 (the Product's page).html">Products</a>
-                        <a href="Page-2.2 (the Global Project's page).html">Global Projects</a>
-                    </div>
-                </div>
-                <a href="Page-3 (the technical university's page).html">Forouhar Industrie's University </a>
-                <a href="Page-4 (About us & our History's page).html">About Us</a>
-                <a href="Page-5 (Members of the Company's page).html">Members of company</a>
-                <a href="Page-6 (Contact us's page).html">Contact us</a>
-                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-                <form>
-                    <input type="text" name="search" placeholder="Search..">
-                </form>
-          </div>
-        </div>
-
+            <div class="col-12 col-s-12 menu">
+                <ul class="navbar" style="background-color: #333;">
+                    <li><a class="active" href="Page-1 (main page).html">Home</a></li>
+                        <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">Products and Projects </a>
+                                <div class="dropdown-content">
+                                    <a href="Page-2.1 (the Product's page).html">Products</a>
+                                    <a href="Page-2.2 (the Global Project's page).html">Global Projects</a>
+                                </div>
+                        </li>
+                    <li><a href="Page-3 (the technical university's page).html">Forouhar Industrie's University </a></li>
+                    <li><a href="Page-4 (About us & our History's page).html">About Us</a></li>
+                    <li><a href="Page-5 (Members of the Company's page).html">Members of company</a></li>
+                    <li><a href="Page-6 (Contact us's page).html">Content us</a>
+                    </li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </ul>
+            </div>        
         <div style="background-color: rgb(39, 37, 177);
-            color: white; padding: 30px;" id="Head">
+                color: white; padding: 30px;" id="Head">
             <h1 style="text-align: center;">
                 <em>
                     Forouhar Industrie's main page
                 </em>
             </h1>
         </div>
-        <div id="style1">
-            <h1>
-                <em>
-                    Welcome to Forouhar Industries
-                </em>
-            </h1>
-            <h2>
-                <em>
-                    the first Company which made imposible things to possible
-                </em>
-            </h2>
-            <h2>
-                <em>
-                    We make your ideas in real <br/><br/> or in another word: with you we make your ideas in real!
-                </em>
-            </h2>
-        </div>
+            <div id="style1">
+                <h1>
+                    <em>
+                        Welcome to Forouhar Industries
+                    </em>
+                </h1>
+                <h2>
+                    <em>
+                        the first Company which made imposible things to possible
+                    </em>
+                </h2>
+                <h2>
+                    <em>
+                        We make your ideas in real <br/><br/> or in another word: with you we make your ideas in real!
+                    </em>
+                </h2>
+            </div>
 
         <div style="overflow-x:auto; margin-left: 5%; width: 90%;">
             <table id="table2" cellpadding="10" cellspacing="20" border="10">
@@ -79,7 +112,7 @@
                         <tr >
                         <td rowspan="1">
                             <div style="padding: 10px; box-shadow: 30px;">
-                            <div style="text-decoration: none;color: black;" href="#">
+                               <div style="text-decoration: none;color: black;" href="#">
                                     <h3 style="font-weight: normal;font-size: 16px;">See the companie's pruducts that we have been made and we will make,you can buy them as well<br/>
                                             you can also send emails to send your project's ideas OR apply a time to meet one of our Development agent to see your Products face to face.
                                     </h3>
@@ -173,7 +206,7 @@
                                 <div style="padding: 10px;">
                                     <span style="color: #9e9e9e;">
                                         September 15 2021 3:19PM
-                                    </span>
+                                     </span>
                                 </div>
                             </td>
                         </td>
@@ -181,29 +214,21 @@
                 </tbody>
             </table>
         </div>
-        <div style="clear: both;"></div>
-        <br/>
+            <div style="clear: both;">
+                
+            </div>
+            <br/>
         <div id="footer">
-            CopyRight my Website.com/2021</p>
+          <p>CopyRight my Website.com/2021</p>
             <div>
-            <a style="text-decoration: none; padding-right: 15px;" href="Page-6 (Contact us's page).html"> 
-                <img style="width: 40px;" src="Images/icons of the footer/orange-email-icon-png.png">
-            </a>
-            <a style="text-decoration: none; padding-right: 15px;" href="Page-6 (Contact us's page).html">
-                <img style="width: 40px;" src="Images/icons of the footer/orange phone call.png">
-            </a>
+                <a style="text-decoration: none; padding-right: 15px;" href="Page-6 (Contact us's page).html"> 
+                    <img style="width: 40px;" src="Images/icons of the footer/orange-email-icon-png.png">
+                </a>
+                <a style="text-decoration: none; padding-right: 15px;" href="Page-6 (Contact us's page).html">
+                    <img style="width: 40px;" src="Images/icons of the footer/orange phone call.png">
+                </a>
             </div>
         </div>
-            <!--the navbar last child collaps-->
-            <script>
-                function myFunction() {
-                    var x = document.getElementById("mynavbar");
-                    if (x.className === "navbar") {
-                    x.className += " responsive";
-                    } else {
-                    x.className = "navbar";
-                    }
-                }
-            </script>
     </body>
-</html>
+</Html>
+
