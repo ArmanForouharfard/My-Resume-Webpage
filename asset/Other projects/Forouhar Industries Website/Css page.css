@@ -1,151 +1,155 @@
 /*the Navbar*/
 body {
-  margin: 0;
-  padding: 0;
-  text-decoration: ltr; 
-  font-size: 18px;
+    margin: 0;
+    padding: 0;
+    text-decoration: ltr; 
+    font-size: 18px;
 }
 
-#head {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-}
+  #head {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+  }
 
-.navbar {
-overflow: hidden;
-background-color: #333;
-}
+  #navbar {
+    overflow: hidden;
+    background-color: #333;
 
-.navbar a {
-float: left;
-display: block;
-color: #f2f2f2;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 17px;
-transition: 1s;
-}
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar a:hover {
+    background-color: #c95508;
+    color: white;
+  }
 
-.active {
-color: white;
+.topnav a.active {
+  color: white;
 }
 
 .navbar .icon {
-display: none;
+  display: none;
 }
 
-.dropdown {
-float: left;
-overflow: hidden;
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
 }
 
-.dropdown .dropbtn {
-font-size: 17px;    
-border: none;
-outline: none;
-color: white;
-padding: 14px 16px;
-background-color: inherit;
-font-family: inherit;
-margin: 0;
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/*Dropdowns*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  overflow: hidden;
+  background-color: #333;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #d76819;
+}
+
+li.dropdown {
+  display: inline-block;
 }
 
 .dropdown-content {
-display: none;
-position: absolute;
-background-color: #333;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .dropdown-content a {
-float: none;
-color: white;
-padding: 12px 37px;
-text-decoration: none;
-display: block;
-text-align: left;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-background-color: #c95508;
-color: white;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
 .dropdown-content a:hover {
-background-color: #c95508;
-color: white;
+  background-color: #d76819;
 }
 
 .dropdown:hover .dropdown-content {
-display: block;
+  display: block;
 }
 
-@media screen and (max-width: 600px) {
-.navbar a:not(:first-child), .dropdown .dropbtn {
-  display: none;
-}
-.navbar a.icon {
-  float: right;
-  display: block;
-}
-}
-
-@media screen and (max-width: 600px) {
-.navbar.responsive {position: relative;}
-.navbar.responsive .icon {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.navbar.responsive a {
-  float: none;
-  display: block;
-  text-align: left;
-}
-.navbar.responsive .dropdown {float: none;}
-.navbar.responsive .dropdown-content {position: relative;}
-.navbar.responsive .dropdown .dropbtn {
-  display: block;
-  width: 100%;
-  text-align: left;
-}
-}
 /*the Animation Search Box*/
 #navbar .search-container {
-float: right;
+  float: right;
 }
 
 #navbar input[type=text] {
-padding: 6px;
-margin-top: 8px;
-font-size: 17px;
-border: none;
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
 }
 
 input[type=text] {
-margin-top: 4px;
-width: 130px;
-box-sizing: border-box;
-border: 2px solid #ccc;
-border-radius: 4px;
-font-size: 16px;
-background-color: white;
-background-image: url('Images/searchicon.png');
-background-position: 10px 10px; 
-background-repeat: no-repeat;
-padding: 12px 20px 12px 40px;
--webkit-transition: width 0.4s ease-in-out;
-transition: width 0.4s ease-in-out;
+  margin-top: 4px;
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('Images/searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
 
 input[type=text]:focus {
-width: 30%;
+  width: 30%;
 }
-
 
 /*the Background images*/
 .bg1{
@@ -299,6 +303,17 @@ th, td {
   padding: 8px;
 }
 
+#table1 td img{
+  width: 30%; border-radius: 50%; border: 2px gray solid; padding: 10px;
+}
+
+/* Responsive layout - makes the table1 stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  #table1 td img{
+    width: 100%;
+  }
+}
+
 tr:nth-child(even){background-color: #f2f2f2}
 
 
@@ -318,7 +333,7 @@ tr:nth-child(even){background-color: #f2f2f2}
   white-space: nowrap;
   overflow: hidden;
   text-overflow: clip;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .btn-blue:hover {
@@ -341,6 +356,7 @@ tr:nth-child(even){background-color: #f2f2f2}
   text-align: left;
   outline: none;
   font-size: 15px;
+  transition: all 0.5s;
 }
 
 .active1, .collapsible:hover {
@@ -363,7 +379,7 @@ tr:nth-child(even){background-color: #f2f2f2}
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
 
@@ -378,6 +394,7 @@ tr:nth-child(even){background-color: #f2f2f2}
   text-align: left;
   outline: none;
   font-size: 15px;
+  transition: all 0.5s;
 }
 
 .active2, .collapsible2:hover {
@@ -400,7 +417,7 @@ tr:nth-child(even){background-color: #f2f2f2}
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
 
@@ -415,6 +432,7 @@ tr:nth-child(even){background-color: #f2f2f2}
   text-align: left;
   outline: none;
   font-size: 15px;
+  transition: all 0.5s;
 }
 
 .active3, .collapsible3:hover {
@@ -437,7 +455,7 @@ tr:nth-child(even){background-color: #f2f2f2}
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
 /* 2 picture with column */
