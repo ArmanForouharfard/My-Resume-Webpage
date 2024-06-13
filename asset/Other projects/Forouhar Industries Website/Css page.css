@@ -304,10 +304,7 @@ padding: 8px;
 }
 
 #table1 td img{
-  width: 30%; 
-  border-radius: 50%; 
-  border: 2px gray solid; 
-  padding: 10px;
+width: 30%; border-radius: 50%; border: 2px gray solid; padding: 10px;
 }
 
 /* Responsive layout - makes the table1 stack on top of each other instead of next to each other */
