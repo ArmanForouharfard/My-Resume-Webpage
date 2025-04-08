@@ -3,8 +3,8 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-
         <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' rel='stylesheet' />
 
         <link rel="stylesheet" href="asset/index.css">
@@ -22,7 +22,8 @@
                     </span>       
                     <div id="mySidenav" class="sidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <img style="width: 40%; border-radius: 50%; margin-left: 70px; border: 4px gray solid;" src="asset/images/Owner's img/A.forouhar.jpg">
+                        <img style="width: 40%; border-radius: 50%; margin-left: 70px; border: 4px gray solid;" 
+                        src="asset/images/Owner's img/A.forouhar.jpg">
                           <h3 style="text-align: center;">
                               <em>
                                   Arman_Forouharfard's Resume-Webpage
@@ -107,7 +108,7 @@
                         
                         <div class="mySlides fade">
                           <div class="numbertext">3 / 3</div>
-                            <a href="asset/Other projects/Voice-Desktop-Assisstant-Ai/Jarvis.9 final.py">
+                            <a href="asset/Other projects/Voice-Desktop-Assisstant-Ai/Jarvis.11 (in javascript).html">
                               <img src="asset/images/Thumbnail Images of websites/Personal-Assistant-AI.jpg" style="width:100%">
                                 <div class="text">
                                   <div style="background-color: aliceblue;">
@@ -130,7 +131,6 @@
                         <span class="dot" onclick="currentSlide(2)"></span> 
                         <span class="dot" onclick="currentSlide(3)"></span> 
                     </div>
-
                     <div style="clear: both;"></div>
                 
                 </div>
@@ -167,30 +167,49 @@
                             Education
                         </em>
                       </h2>
-
-                      <h3>
-                        <em style="float: left;">
-                          Associate Degree: Software
-                        </em>
-                        <em style="float: right; color: #144496;">
-                          2019 _ 2023
-                        </em>
-                      </h3>
-
-                      <br/>
-
-                      <h4>
-                        <em style="float: left;">
-                          Islamic Azad University, Yadegar Emam Branch
-                        </em>
-
-                        <em style="float: right; color: #144496;">
-                          GPA:(B+) 17.17
-                        </em>
-                      </h4>
                       
-                      <div style="clear: both;"></div>
+                        <div id="Ed intel">              
+                          <h3>
+                            <em style="float: left;">
+                              Associate Degree: Software Programming
+                            </em>
+                            <em style="float: right; color: #144496;">
+                              2019 _ 2023
+                            </em>
+                          </h3>
+                            <br/>
+                          <h4>
+                            <em style="float: left;">
+                              Islamic Azad University, Yadegar Emam Branch
+                            </em>
+                            <em style="float: right; color: #144496;">
+                              GPA:(B+) 17.17
+                            </em>
+                          </h4>
+                                              
+                        <div style="clear: both;"></div>
+                        <hr>
+          
+                        <h3>
+                          <em style="float: left;">
+                            Bachlor Degree: Software Enginerring
+                          </em>
+                          <em style="float: right; color: #144496;">
+                            2024 _ still studying
+                          </em>
+                        </h3>
+                        <br/>
+                        <h4>
+                          <em style="float: left;">
+                            Islamic Azad University, Yadegar Emam Branch
+                          </em>
+                          <em style="float: right; color: #144496;">
+                            GPA: ...
+                          </em>
+                        </h4>
+                      </div>
 
+                      <div style="clear: both;"></div>
                     </div>
                   </div>
 
@@ -226,7 +245,6 @@
                       </h4>
 
                       <div style="clear: both;"></div>
-
                       <hr>
 
                       <h3>
@@ -253,7 +271,32 @@
                       </h4>
 
                       <div style="clear: both;"></div>
+                      <hr>
 
+                      <h3>
+                        <em style="float: left; color: #00B0F0;"> 
+                          Artficial Intelligence Starter
+                        </em>
+                        <em style="float: right; color: #144496;">
+                          05.2024 _ still studying
+                        </em>
+                      </h3>
+                        <br>
+                      <h4>
+                        <em style="float: left;">
+                          <p>
+                            AIO Learn Academy
+                              <br>
+                            Covered topics:
+                          </p>
+                        </em>
+                          <br>
+                        <em style="float: right; color: #144496;">
+                          Python, Machine Learning, Chat gpt AI
+                        </em>
+                      </h4>
+
+                      <div style="clear: both;"></div>
                     </div>
                   </div>
 
@@ -261,11 +304,12 @@
                         <div class="column">
                           <div id="style1">
                             <p>
-                                <em>
-                                    The programming languages (Front-End)
-                                </em>
+                              <em>
+                                  The programming languages (Front-End)
+                              </em>
                             </p>
-                            <canvas id="myChart1" style="width:100%; max-width:600px; display:initial;"></canvas>
+                            <canvas id="myChart1" class="chart-container" style="
+                              width:100%; max-width:600px; display:initial;"></canvas>
                             <!-- "#e8c3b9" 5 ,"#1e7145" 5 colors (incase if you need more)-->
                             <script>
                               var xValues = ["Html", "Css", "Java Script"];
@@ -299,9 +343,9 @@
                         <div class="column">
                           <div id="style1">
                             <p>
-                                <em>
-                                    The programming languages (Back-End)
-                                </em>
+                              <em>
+                                  The programming languages (Back-End)
+                              </em>
                             </p>
                             <canvas id="myChart2" style="width:100%; max-width:600px; display:initial;"></canvas>
                             <script>
@@ -319,7 +363,7 @@
                                 ];
                           
                                 new Chart("myChart2", {
-                                  type: "pie",
+                                  type: "doughnut",
                                   data: {
                                     labels: xValues,
                                     datasets: [{
@@ -340,9 +384,9 @@
                         <div class="column">
                           <div id="style1">
                             <p>
-                                <em>
-                                    The frameworks
-                                </em>
+                              <em>
+                                  The frameworks
+                              </em>
                             </p>
                             <canvas id="myChart3" style="width:100%; max-width:600px; display:initial;"></canvas>
                             <script>
@@ -359,7 +403,7 @@
                                 ];
                           
                                 new Chart("myChart3", {
-                                  type: "pie",
+                                  type: "doughnut",
                                   data: {
                                     labels: xValues,
                                     datasets: [{
@@ -380,11 +424,47 @@
                         <div class="column">
                           <div id="style1">
                             <p>
-                                <em>
-                                    Microsoft Applications
-                                </em>
+                              <em>
+                                  javascript's Library
+                              </em>
                             </p>
                             <canvas id="myChart4" style="width:100%; max-width:600px; display:initial;"></canvas>
+                            <!-- "#e8c3b9" 5 ,"#1e7145" 5 colors (incase if you need more)-->
+                            <script>
+                              var xValues = ["ReactJS"];
+                              var yValues = [20];
+                              var barColors = [
+                                "#61DBFB",
+                                //"#a6120d",
+                              ];
+                        
+                              new Chart("myChart4", {
+                                type: "doughnut",
+                                data: {
+                                  labels: xValues,
+                                  datasets: [{
+                                    backgroundColor: barColors,
+                                    data: yValues
+                                  }]
+                                },
+                                options: {
+                                  title: {
+                                    display: true,
+                                  }
+                                }
+                              });
+                            </script>
+                          </div>
+                        </div>
+
+                        <div class="column">
+                          <div id="style1">
+                            <p>
+                              <em>
+                                  Microsoft Applications
+                              </em>
+                            </p>
+                            <canvas id="myChart5" style="width:100%; max-width:600px; display:initial;"></canvas>
                             <!-- "#e8c3b9" 5 ,"#1e7145" 5 colors (incase if you need more)-->
                             <script>
                               var xValues = ["Word", "Powerpoint", "Excel", "Access"];
@@ -396,7 +476,7 @@
                                 "#c50847",
                               ];
                         
-                              new Chart("myChart4", {
+                              new Chart("myChart5", {
                                 type: "doughnut",
                                 data: {
                                   labels: xValues,
@@ -422,7 +502,7 @@
 
             <div id="Services">
               <div id="style1">  
-                <div id="myBtnContainer" style="color: #02cf69;">
+                <div id="myBtnContainer">
                 <!--Front end languages-->
                   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
                   <button class="btn" onclick="filterSelection('HTML & CSS & javascript')"> HTML & CSS & javascript</button>
@@ -458,7 +538,7 @@
                     </div>
                     <div class="column2 Python">
                         <div class="content2">
-                            <a href="asset/Other projects/Voice-Desktop-Assisstant-Ai/Jarvis.9 final.py">
+                            <a href="asset/Other projects/Voice-Desktop-Assisstant-Ai/Jarvis.11 (in javascript).html">
                                 <img src="asset/images/Thumbnail Images of websites/Personal-Assistant-AI.jpg" alt="Full Website 3" style="width:100%">
                                 <h4> Project 3: JARVIS</h4>
                                 <p>A voice desktop assistant Ai ((Codes Only) not in html and css page form yet!)</p>
@@ -501,7 +581,6 @@
       </div>
       <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     
-        
         <script type="text/javascript" src="asset/index.js"></script>
     </body>
     <!-- Issue's List
