@@ -76,7 +76,7 @@
                     <div class="slideshow-container">
                         <div class="mySlides fade">
                           <div class="numbertext">1 / 3</div>
-                            <a href="asset/Other projects/Forouhar Industries Website/Page-1 (main page).html">
+                            <a href="https://armanforouharfard.github.io/Forouhar-Industries-website/index.html">
                               <img src="asset/images/Thumbnail Images of websites/Forouhar industries (thumbnail images).png" style="width:100%">
                               <div class="text">
                                 <div style="background-color: aliceblue;">
@@ -92,7 +92,7 @@
                         
                         <div class="mySlides fade">
                           <div class="numbertext">2 / 3</div>
-                            <a href="asset/Other projects/My linktree page/Link tree index.html">
+                            <a href="https://armanforouharfard.github.io/My-Linktree/index.html">
                               <img src="asset/images/Thumbnail Images of websites/linktree webpage.png" style="width:100%">
                                 <div class="text">
                                   <div style="background-color: aliceblue;">
@@ -108,7 +108,7 @@
                         
                         <div class="mySlides fade">
                           <div class="numbertext">3 / 3</div>
-                            <a href="asset/Other projects/Voice-Desktop-Assisstant-Ai/Jarvis.11 (in javascript).html">
+                            <a href="https://armanforouharfard.github.io/JARVIS-JS/index.html">
                               <img src="asset/images/Thumbnail Images of websites/Personal-Assistant-AI.jpg" style="width:100%">
                                 <div class="text">
                                   <div style="background-color: aliceblue;">
@@ -301,27 +301,68 @@
                   </div>
 
                     <div class="row">
-                        <div class="column">
-                          <div id="style1">
-                            <p>
-                              <em>
-                                  The programming languages (Front-End)
-                              </em>
-                            </p>
-                            <canvas id="myChart1" class="chart-container" style="
-                              width:100%; max-width:600px; display:initial;"></canvas>
-                            <!-- "#e8c3b9" 5 ,"#1e7145" 5 colors (incase if you need more)-->
-                            <script>
-                              var xValues = ["Html", "Css", "Java Script"];
-                              var yValues = [60, 60, 30];
+                      <div class="column">
+                        <div id="style1">
+                          <p>
+                            <em>
+                                The programming languages (Front-End)
+                            </em>
+                          </p>
+                          <canvas id="myChart1" class="chart-container" style="
+                            width:100%; max-width:600px; display:initial;"></canvas>
+                          <!-- "#e8c3b9" 5 ,"#1e7145" 5 colors (incase if you need more)-->
+                          <script>
+                            var xValues = ["Html", "Css", "Java Script"];
+                            var yValues = [60, 60, 30];
+                            var barColors = [
+                              "#fd0000",
+                              "#2b5797",
+                              "#fffb00",
+                              //#00aba9
+                            ];
+                      
+                            new Chart("myChart1", {
+                              type: "doughnut",
+                              data: {
+                                labels: xValues,
+                                datasets: [{
+                                  backgroundColor: barColors,
+                                  data: yValues
+                                }]
+                              },
+                              options: {
+                                title: {
+                                  display: true,
+                                }
+                              }
+                            });
+                          </script>
+                        </div>
+                      </div>
+
+                      <div class="column">
+                        <div id="style1">
+                          <p>
+                            <em>
+                                The programming languages (Back-End)
+                            </em>
+                          </p>
+                          <canvas id="myChart2" style="width:100%; max-width:600px; display:initial;"></canvas>
+                          <script>
+                              var xValues = ["Php", "SQL", "Java", "python", "C", "C#", "C++"];
+                              var yValues = [10, 30, 10, 50, 10, 15, 20];
                               var barColors = [
+                                "#8400ff",
+                                "#0065fc",
                                 "#fd0000",
-                                "#2b5797",
-                                "#fffb00",
-                                //#00aba9
+                                "#fffd6a",
+                                "#d1d1d1",
+                                "#72359b",
+                                "#0075fc",
+                                //00ff88
                               ];
                         
-                              new Chart("myChart1", {
+                              new Chart("myChart2", {
                                 type: "doughnut",
                                 data: {
                                   labels: xValues,
@@ -337,146 +378,31 @@
                                 }
                               });
                             </script>
-                          </div>
                         </div>
+                      </div>
 
-                        <div class="column">
-                          <div id="style1">
-                            <p>
-                              <em>
-                                  The programming languages (Back-End)
-                              </em>
-                            </p>
-                            <canvas id="myChart2" style="width:100%; max-width:600px; display:initial;"></canvas>
-                            <script>
-                                var xValues = ["Php", "SQL", "Java", "python", "C", "C#", "C++"];
-                                var yValues = [10, 30, 10, 50, 10, 15, 20];
-                                var barColors = [
-                                  "#8400ff",
-                                  "#0065fc",
-                                  "#fd0000",
-                                  "#fffd6a",
-                                  "#d1d1d1",
-                                  "#72359b",
-                                  "#0075fc",
-                                  //00ff88
-                                ];
-                          
-                                new Chart("myChart2", {
-                                  type: "doughnut",
-                                  data: {
-                                    labels: xValues,
-                                    datasets: [{
-                                      backgroundColor: barColors,
-                                      data: yValues
-                                    }]
-                                  },
-                                  options: {
-                                    title: {
-                                      display: true,
-                                    }
-                                  }
-                                });
-                              </script>
-                          </div>
-                        </div>
-
-                        <div class="column">
-                          <div id="style1">
-                            <p>
-                              <em>
-                                  The frameworks
-                              </em>
-                            </p>
-                            <canvas id="myChart3" style="width:100%; max-width:600px; display:initial;"></canvas>
-                            <script>
-                                var xValues = ["wordpress","Github","Git","Bootstrap",];
-                                var yValues = [15,10,10,15];
-                                var barColors = [
-                                  "#00aba9",
-                                  "#252525",
-                                  "#fd0000",
-                                  "#9445c9",
-                                  //"#fffb00",
-                                  //"#b91d47",
-                                  //"#1e7145",
-                                ];
-                          
-                                new Chart("myChart3", {
-                                  type: "doughnut",
-                                  data: {
-                                    labels: xValues,
-                                    datasets: [{
-                                      backgroundColor: barColors,
-                                      data: yValues
-                                    }]
-                                  },
-                                  options: {
-                                    title: {
-                                      display: true,
-                                    }
-                                  }
-                                });
-                              </script>
-                          </div>
-                        </div>
-
-                        <div class="column">
-                          <div id="style1">
-                            <p>
-                              <em>
-                                  javascript's Library
-                              </em>
-                            </p>
-                            <canvas id="myChart4" style="width:100%; max-width:600px; display:initial;"></canvas>
-                            <!-- "#e8c3b9" 5 ,"#1e7145" 5 colors (incase if you need more)-->
-                            <script>
-                              var xValues = ["ReactJS"];
-                              var yValues = [20];
+                      <div class="column">
+                        <div id="style1">
+                          <p>
+                            <em>
+                                The frameworks
+                            </em>
+                          </p>
+                          <canvas id="myChart3" style="width:100%; max-width:600px; display:initial;"></canvas>
+                          <script>
+                              var xValues = ["wordpress","Github","Git","Bootstrap",];
+                              var yValues = [15,10,10,15];
                               var barColors = [
-                                "#61DBFB",
-                                //"#a6120d",
-                              ];
-                        
-                              new Chart("myChart4", {
-                                type: "doughnut",
-                                data: {
-                                  labels: xValues,
-                                  datasets: [{
-                                    backgroundColor: barColors,
-                                    data: yValues
-                                  }]
-                                },
-                                options: {
-                                  title: {
-                                    display: true,
-                                  }
-                                }
-                              });
-                            </script>
-                          </div>
-                        </div>
-
-                        <div class="column">
-                          <div id="style1">
-                            <p>
-                              <em>
-                                  Microsoft Applications
-                              </em>
-                            </p>
-                            <canvas id="myChart5" style="width:100%; max-width:600px; display:initial;"></canvas>
-                            <!-- "#e8c3b9" 5 ,"#1e7145" 5 colors (incase if you need more)-->
-                            <script>
-                              var xValues = ["Word", "Powerpoint", "Excel", "Access"];
-                              var yValues = [50, 40, 30, 10];
-                              var barColors = [
-                                "#2b5797",
+                                "#00aba9",
+                                "#252525",
                                 "#fd0000",
-                                "#02cf69",
-                                "#c50847",
+                                "#9445c9",
+                                //"#fffb00",
+                                //"#b91d47",
+                                //"#1e7145",
                               ];
                         
-                              new Chart("myChart5", {
+                              new Chart("myChart3", {
                                 type: "doughnut",
                                 data: {
                                   labels: xValues,
@@ -492,8 +418,82 @@
                                 }
                               });
                             </script>
-                          </div>
                         </div>
+                      </div>
+
+                      <div class="column">
+                        <div id="style1">
+                          <p>
+                            <em>
+                                javascript's Library
+                            </em>
+                          </p>
+                          <canvas id="myChart4" style="width:100%; max-width:600px; display:initial;"></canvas>
+                          <!-- "#e8c3b9" 5 ,"#1e7145" 5 colors (incase if you need more)-->
+                          <script>
+                            var xValues = ["ReactJS"];
+                            var yValues = [20];
+                            var barColors = [
+                              "#61DBFB",
+                              //"#a6120d",
+                            ];
+                      
+                            new Chart("myChart4", {
+                              type: "doughnut",
+                              data: {
+                                labels: xValues,
+                                datasets: [{
+                                  backgroundColor: barColors,
+                                  data: yValues
+                                }]
+                              },
+                              options: {
+                                title: {
+                                  display: true,
+                                }
+                              }
+                            });
+                          </script>
+                        </div>
+                      </div>
+
+                      <div class="column">
+                        <div id="style1">
+                          <p>
+                            <em>
+                                Microsoft Applications
+                            </em>
+                          </p>
+                          <canvas id="myChart5" style="width:100%; max-width:600px; display:initial;"></canvas>
+                          <!-- "#e8c3b9" 5 ,"#1e7145" 5 colors (incase if you need more)-->
+                          <script>
+                            var xValues = ["Word", "Powerpoint", "Excel", "Access"];
+                            var yValues = [50, 40, 30, 10];
+                            var barColors = [
+                              "#2b5797",
+                              "#fd0000",
+                              "#02cf69",
+                              "#c50847",
+                            ];
+                      
+                            new Chart("myChart5", {
+                              type: "doughnut",
+                              data: {
+                                labels: xValues,
+                                datasets: [{
+                                  backgroundColor: barColors,
+                                  data: yValues
+                                }]
+                              },
+                              options: {
+                                title: {
+                                  display: true,
+                                }
+                              }
+                            });
+                          </script>
+                        </div>
+                      </div>
 
                     </div>
                 </div>
@@ -520,7 +520,7 @@
                   <div class="row">
                     <div class="column2 HTML & CSS & javascript">
                         <div class="content2">
-                            <a href="asset/Other projects/Forouhar Industries Website/Page-1 (main page).html">
+                            <a href="https://armanforouharfard.github.io/Forouhar-Industries-website/index.html">
                                 <img src="asset/images/Thumbnail Images of websites/Forouhar industries (thumbnail images).png" alt="Full Website 1" style="width:100%">
                                 <h4>Project 2: Forouhar Industries</h4>
                                 <p>HTML & CSS & javascript (not added on internet yet!)</p>
@@ -529,7 +529,7 @@
                     </div>
                     <div class="column2 HTML & CSS & javascript">
                         <div class="content2">
-                            <a href="asset/Other projects/My linktree page/Link tree index.html">
+                            <a href="https://armanforouharfard.github.io/My-Linktree/index.html">
                                 <img src="asset/images/Thumbnail Images of websites/linktree webpage.png" alt="Full Website 2" style="width:100%">
                                 <h4>Project 2: My linktree page</h4>
                                 <p>HTML & CSS (Only (No javascript))</p>
@@ -538,7 +538,7 @@
                     </div>
                     <div class="column2 Python">
                         <div class="content2">
-                            <a href="asset/Other projects/Voice-Desktop-Assisstant-Ai/Jarvis.11 (in javascript).html">
+                            <a href="https://armanforouharfard.github.io/JARVIS-JS/index.html">
                                 <img src="asset/images/Thumbnail Images of websites/Personal-Assistant-AI.jpg" alt="Full Website 3" style="width:100%">
                                 <h4> Project 3: JARVIS</h4>
                                 <p>A voice desktop assistant Ai ((Codes Only) not in html and css page form yet!)</p>
@@ -589,6 +589,6 @@
       
       2) on project's list some of the langauge buttons stays active (gray color) it's probably an error of my button codes
 
-      3) no other errors for now!!!
+      3) No other errors for now!!!
     -->
 </html> 
